@@ -36,8 +36,6 @@ function checkLogin(username , password) {
     let user = fakeDatabase.find(user => user.username === username && user.password === password);
     if (user) {
         console.log("User found");
-        // send access token to client
-
         return true;
     } else {
         console.log("User not found");
