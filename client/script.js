@@ -3,6 +3,7 @@ const searchSection = document.getElementById('search-section')
 const searchInput = document.getElementById('search')
 const searchButton = document.getElementById('search-button')
 const searchMessage = document.getElementById('search-message')
+const logoutButton = document.getElementById('logout-button')
 
 // prevent form from submitting
 form.addEventListener('submit', function (event) {
@@ -33,15 +34,18 @@ function login(username, password) {
         .then(response => response.json())
         .then(data => {
             console.log(data);
-
             // save the token to localStorage
             localStorage.setItem('token', data.token);
             alert('Login Successful!');
+            // refresh the page
+            location.reload();
         })
 
         .catch(err => {
             console.log(err);
         });
+
+       
 }
 
 
@@ -68,6 +72,7 @@ async function checkToken() {
         if(data.status === 'OK'){
             form.style.display = 'none';
             searchSection.style.display = 'block';
+            logoutButton.style.display = 'block';
             let message = document.getElementById('message');
             let decoded = atob(token.split('.')[1]);
             decoded = JSON.parse(decoded);
@@ -92,7 +97,13 @@ searchButton.addEventListener('click', function (event) {
     params.append('search', searchValue);
 
     // Add the query string to the URL
-    window.location.search = params.toString();
+    // window.location.search = params.toString();
 
     searchMessage.innerHTML = `you searched for ${searchValue}`;
+});
+
+logoutButton.addEventListener('click', function (event) {
+    event.preventDefault();
+    localStorage.removeItem('token');
+    location.reload();
 });
