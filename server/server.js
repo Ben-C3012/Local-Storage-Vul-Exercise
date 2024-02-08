@@ -48,6 +48,7 @@ app.post('/checkToken', (req, res) => {
     let token = req.body.token;
 
     // check if token is valid
+    // *do not store secrets in code in production*
     jwt.verify(token, 'secret-key', (err, decoded) => {
         
         if (err) {

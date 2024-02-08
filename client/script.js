@@ -36,6 +36,12 @@ function login(username, password) {
             console.log(data)
             // save the token to localStorage
             localStorage.setItem('token', data.token)
+
+            if (data.error) {
+                alert(data.error)
+                return
+            }
+         
             alert('Login Successful!')
             // refresh the page
             location.reload()
@@ -99,13 +105,9 @@ searchButton.addEventListener('click', function (event) {
     // navigate to search.html
     window.location.href = 'search.html?search=' + searchValue
 
-    
 })
 
-
-
 logoutButton.addEventListener('click', function (event) {
-
     event.preventDefault()
     localStorage.removeItem('token')
     location.reload()
