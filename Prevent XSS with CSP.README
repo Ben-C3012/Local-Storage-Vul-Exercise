@@ -1,5 +1,10 @@
+*Prevent XSS with CSP Exercise*
 
-const fakeDatabase = [
+The website implements a login function using local storage. 
+
+1. Login with an account of your choice. 
+
+
     { username: 'Michael Scott', password: 'password' },
     { username: 'Jim Halpert', password: 'dragon' },
     { username: 'Pam Beesly', password: 'superman' },
@@ -13,7 +18,14 @@ const fakeDatabase = [
     { username: 'Skyler White', password: 'Marie' },
     { username: 'Paul Atreides', password: 'dune' },
 
-];
+2. Using reflected XSS, Try to steal your partner's credentials.
+hint: use an XSS payload and send it to your partner
+
+3. Create an http server listening to a port to recieve the exposed cretentials.
 
 
-module.exports = fakeDatabase;
+Final Stage Secure the Code
+1. Eliminate the XSS 
+2. Use http only cookie instead of local storage - Mitigate
+3. CSP - Mitigate
+

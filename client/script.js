@@ -110,3 +110,4 @@ logoutButton.addEventListener('click', function (event) {
     localStorage.removeItem('token')
     location.reload()
 })
+
