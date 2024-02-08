@@ -52,7 +52,6 @@ function login(username, password) {
         })
 }
 
-
 // onload , check if token is valid
 window.onload = checkToken
 

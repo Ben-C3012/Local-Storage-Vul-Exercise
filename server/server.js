@@ -5,12 +5,11 @@ const cors = require('cors');
 const jwt = require('jsonwebtoken');
 const fakeDatabase = require('./database.js');
 
-
 // Middleware
 app.use(express.json()); // Add this line to parse JSON request bodies
 app.use(cors({ 
     origin: 'http://127.0.0.1:5500', 
-    credentials: true  // Add this line to allow credentials
+    credentials: true 
 }));
 
 app.post('/login', (req, res) => {
