@@ -18,9 +18,9 @@ The website implements a login function using local storage.
     12{ username: 'Paul Atreides', password: 'dune' },
 
 2. Using reflected XSS, Try to steal your partner's credentials.
-hint: use an XSS payload and send it to your partner
+--> send your partner a link on slack to the website with the injection at first, start with a simple alert of the token. 
 
-3. Create an http server listening to a port to recieve the exposed cretentials.
+3.Using Codesandbox, Create an Node http server, send the credentials of the victim to your server. 
 
 
 Final Stage Secure the Code
