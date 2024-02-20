@@ -26,5 +26,3 @@ The website implements a login function using local storage.
 Final Stage Secure the Code
 1. Eliminate the XSS 
 2. Use http only cookie instead of local storage - Mitigate
-3. CSP - Mitigate
-
