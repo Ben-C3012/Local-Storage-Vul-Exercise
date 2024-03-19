@@ -13,14 +13,15 @@ npm install
 
 ```bash
 npm start 
+```
 
 ## Exercise Steps
 
-### Step 1: Login
+### Step 1: Login ✅
 
 The website implements a login function using local storage. Login with an account of your choice. Here are some example accounts:
 
-    |   #   |     username     |    password    |
+    |   #   |     username    |    password    |
     |-------|-----------------|----------------|
     |   1   |  Michael Scott  |    password    |
     |   2   |   Jim Halpert   |     dragon     |
@@ -44,8 +45,8 @@ The website implements a login function using local storage. Login with an accou
     |   20  |  Peter Parker   |   spiderman    |
 
 
-### Step 2: XSS Attack
-Split into pairs. Your task is to simulate an XSS attack to steal your partner's token.
+### Step 2: XSS Attack ⚔
+Split into pairs. Your task is to simulate an XSS attack to steal your partner's token 🔑
 
 Craft a URL with a reflected XSS payload that triggers a JavaScript alert with the token value.
 Send this URL to your partner via Slack.
@@ -55,6 +56,6 @@ Create a Node.js Express HTTP server using CodeSandbox.
 Modify your XSS payload to send the token to your server instead of triggering an alert.
 When your partner clicks the link, your server should receive a request containing the token and the victim's IP address.
 
-### Step 3: Secure The Code 
+### Step 3: Secure The Code 🛡
 
 Use an http cookie instead of local-storage to manage authentication.
