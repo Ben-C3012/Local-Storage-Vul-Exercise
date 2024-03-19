@@ -13,6 +13,15 @@ const fakeDatabase = [
     { username: 'Skyler White', password: 'Marie' },
     { username: 'Paul Atreides', password: 'dune' },
 
+    { username: 'John Doe', password: 'john123' },
+    { username: 'Harry Potter', password: 'hogwarts' },
+    { username: 'Hermione Granger', password: 'leviosa' },
+    { username: 'Ron Weasley', password: 'quidditch' },
+    { username: 'Jon Snow', password: 'winteriscoming' },
+    { username: 'Arya Stark', password: 'valarmorghulis' },
+    { username: 'Tony Stark', password: 'ironman' },
+    { username: 'Peter Parker', password: 'spiderman' },
+  
 ];
 
 
