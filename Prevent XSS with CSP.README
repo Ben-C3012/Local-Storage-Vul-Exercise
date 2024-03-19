@@ -17,10 +17,10 @@ The website implements a login function using local storage.
     11{ username: 'Skyler White', password: 'Marie' },
     12{ username: 'Paul Atreides', password: 'dune' },
 
-2. Using reflected XSS, Try to steal your partner's credentials.
+2. Using reflected XSS, Try to steal your partner's token.
 --> send your partner a link on slack to the website with the injection at first, start with a simple alert of the token. 
 
-3.Using Codesandbox, Create an Node http server, send the credentials of the victim to your server. 
+3.Using Codesandbox, Create an Node http server, send the token of the victim to your server. 
 
 
 Final Stage Secure the Code
