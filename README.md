@@ -1,5 +1,5 @@
 # HTML5 Security Exercise 
-In this HTML5 Exercise, we are going to exploit a vulnerability in the local storage web API.
+In this HTML5 Exercise, we will exploit a vulnerability in the local storage web API.
 
 ## Installation
 
@@ -14,6 +14,9 @@ npm install
 ```bash
 npm start 
 ```
+## Server Setup
+1. Start the server.
+2. Open a live server instance of the index.html file. 
 
 ## Exercise Steps
 
