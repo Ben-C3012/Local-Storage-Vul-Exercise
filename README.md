@@ -16,7 +16,7 @@ npm start
 ```
 ## Server Setup
 1. Start the server.
-2. Open a live server instance of the index.html file. 
+2. Open a live instance of the index.html file. 
 
 ## Exercise Steps
 
